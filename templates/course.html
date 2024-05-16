@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ease code</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+  </head>
+  <body>
+    <header>
+      <a href="{% url 'home' %}" class="logo"
+        ><i class="fas fa-graduation-cap"></i>Ease Code</a
+      >
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="{% url 'home' %}">home</a></li>
+          <li><a href="{% url 'about' %}">about</a></li>
+          <li><a href="{% url 'teacher' %}">teacher</a></li>
+          <li><a href="{% url 'course' %}" class="active">course</a></li>
+          <li><a href="{% url 'review' %}">review</a></li>
+          <li><a href="{% url 'contact' %}">contact</a></li>
+        </ul>
+      </nav>
+      <div class="fas fa-bars"></div>
+    </header>
+
+    <!-- course section starts -->
+
+    <section id="course" class="course">
+      <h1 class="heading">our courses</h1>
+      <h3 class="title">upgrade your skills with newest courses</h3>
+
+      <div class="box-container">
+        <div class="box">
+          <i class="fab fa-html5"></i>
+          <h3>html5</h3>
+          <p>
+            Craft visually stunning websites with HTML5, the powerhouse behind modern web design.
+          </p>
+        </div>
+        <div class="box">
+          <i class="fab fa-css3-alt"></i>
+          <h3>css</h3>
+          <p>
+            Elevate your website's aesthetics with CSS! Unleash your creativity
+          </p>
+        </div>
+        <div class="box">
+          <i class="fab fa-js-square"></i>
+          <h3>java script</h3>
+          <p>
+            Bring your web pages to life with JavaScript! Dive into the world of dynamic and interactive web development
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-code"></i>
+          <h3>web development</h3>
+          <p>
+            Unlock the potential of the digital world with web development! From concept to execution
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-bullhorn"></i>
+          <h3>seo marketing</h3>
+          <p>
+            Supercharge your online visibility with SEO marketing!
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-paint-brush"></i>
+          <h3>graphic design</h3>
+          <p>
+            Ignite your creativity and unleash your visual storytelling prowess with graphic design!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- course section starts -->
+
+    <!-- footer section starts -->
+
+    <section class="footer">
+      <div class="icons">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-github"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+      </div>
+
+      <div class="credit">
+        created by <span>Rakhmonov</span> | all rights reserved.
+      </div>
+    </section>
+
+    <!-- footer section ends -->
+
+<!--    &lt;!&ndash; jquery cdn link &ndash;&gt;-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>-->
+
+<!--    &lt;!&ndash; custom js file link &ndash;&gt;-->
+<!--    <script src="js/main.js"></script>-->
+  </body>
+</html>
